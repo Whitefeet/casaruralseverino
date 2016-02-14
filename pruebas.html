@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Casa rural Severino</title>
+<link rel="stylesheet" href="css/estilo.css" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<!--<script type="text/javascript" src="http://localhost/lib/jquery-1.3.min.js"></script>-->
+
+<script type="text/javascript">
+function mainmenu(){
+	// Oculto los submenus
+	$(" #nav ul ").css({display: "none"});
+	// Defino que submenus deben estar visibles cuando se pasa el mouse por encima
+	$(" #nav li").hover(function(){
+		$(this).find('ul:first:hidden').css({visibility: "visible",display: "none"}).animate({
+		height:60, top: "-=35px"}, 500, "linear");
+	});
+}
+
+$(document).ready(function(){
+	mainmenu();
+	
+});	
+</script>
+</head>
+
+<body>
+<div id="contenedor">
+	<div id="cabecera">
+		<div id="logo"><a href="index.html"></a></div>
+		<div id="menu">
+			<ul id="nav">
+				<li>
+					<a href="casa.html">la casa</a>
+					<ul class="submenu">
+						<li><a href="#">habitaciones</a></li>
+						<li><a href="#">zonas comunes</a></li>
+						<li><a href="#">servicios</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="yatova.html">y&aacute;tova</a>
+					<ul>
+						<li><a href="#">habitaciones</a></li>
+						<li><a href="#">zonas comunes</a></li>
+						<li><a href="#">servicios</a></li>
+						<li><a href="#">habitaciones</a></li>
+						<li><a href="#">zonas comunes</a></li>
+						<li><a href="#">servicios</a></li>
+					</ul>
+				</li>
+				<li><a href="#">a visitar</a></li>
+				<li><a href="#">actividades</a></li>
+				<li><a href="#">galer&iacute;a</a></li>
+				<li><a href="#">situaci&oacute;n</a></li>
+				<li><a href="#">contacto</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="cuerpo">
+		<div id="fondo">
+			<img src="imagenes/fachada.jpg" alt="Fachada Casa Severino" width="980" height="663" />
+		</div>
+		<div id="texto">
+			Lorem ipsum dolor...
+		</div>
+	</div>
+	<div id="pie">
+		<span id="copy">&copy;2010 Casa Rural Severino</span>
+		<span id="direccion">| C/ Ramón y cajal, nº x | 46367 Yátova, (Valencia) | 699399112 / 676518443 |</span>
+		<span id="firma"><a href="http://www.tresypico.com">tresypico</a></span>
+	</div>
+</div>
+</body>
+
+</html>

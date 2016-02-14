@@ -1,0 +1,7 @@
+#ExpiresActive On
+#ExpiresDefault A0
+
+# expiracion de 1 mes para archivos estaticos
+#<FilesMatch "\.(gif|jpg|jpeg|png|swf|js|css)$">
+#	ExpiresDefault "access plus 1 months"
+#</FilesMatch>

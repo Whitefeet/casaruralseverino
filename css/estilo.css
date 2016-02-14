@@ -1,0 +1,306 @@
+/*Hoja de estilos
+
+CASA RURAL SEVERINO
+
+autor: Borja Herrero borherga@gmail.com
+última modificación: 13/10/2010
+*/
+
+@font-face {
+font-family: "Futura";
+src: url(../font/Futura.ttc) format("truetype");
+}
+
+/*@font-face {
+font-family: "Futura Bold";
+src: url(font/FuturaStd-Medium.otf) format("opentype");
+}*/
+a { color:inherit;}
+a:focus {outline:0px;}
+body { font-family:"Futura", sans-serif; color:#584d43; margin:0; }
+h2{
+font-family:"Futura",sans-serif;
+font-size:12px;
+font-weight:normal;
+letter-spacing:6px;
+line-height:1.5;
+padding:48px 5px 22px;
+text-transform:uppercase;
+}
+
+#contenedor {
+	/*width:980px;*/
+	width:854px;
+	margin: 0 auto;
+	overflow:hidden;
+}
+#cabecera {
+	background:url("../imagenes/fondo_azul.png") no-repeat scroll 0 0 transparent;
+	height:145px;
+	width:854px;
+}
+#controls { 	
+bottom:5px;
+color:#FFFFFF;
+height:30px;
+left:5px;
+position:absolute;
+text-decoration:none;
+width:30px;
+}
+#prevBtn, #nextBtn{ 
+display:block;
+text-indent:-8000px;
+width:30px;
+}														
+#prevBtn a, #nextBtn a{  
+background:url("../imagenes/nav.png") no-repeat scroll 0 0 transparent;
+display:block;
+height:30px;
+width:30px;
+}
+#nextBtn a{ 
+background-position:bottom left;
+}	
+.controlsGaleria{
+background: transparent url("../imagenes/nav.png");
+color:#000;
+cursor:pointer;
+height:30px;
+position:absolute;
+text-decoration:none;
+text-indent:-9999px;
+top:190px;
+width:30px;
+z-index:100;
+}
+#controlsGaleriaprev{
+background-position:top left;
+display:none;
+left:0px;
+}
+#controlsGalerianext{
+background-position:bottom left;
+right:0px;
+}
+#copy{
+	float:left;
+}
+#cuerpo {
+	padding:3px 0;
+	width:854px;
+	height:400px;
+	/*overflow:hidden;*/
+	/*background: url(imagenes/fachada.jpg) no-repeat scroll 0 0;*/
+}
+#direccion{ float:left;}
+#firma {}
+#galeria{
+height:400px;
+left:0;
+position:relative;
+top:0;
+/*width:10000px;*/
+}
+#galeria li{
+display:inline;
+float:left;
+margin:0 6px 0 0;
+width:80px;
+}
+#imagen { 
+float:left;
+height:	400px;/*400*/
+overflow:hidden;
+position:relative;
+width:754px;/*745*/
+}
+#imagen.slider{}	
+#imagen.slider ul, #imagen.slider ul li{
+	margin:0;
+	padding:0;
+	list-style:none;
+	}
+#imagen.slider ul li{ 
+	width:754px;
+	height:400px;
+	overflow:hidden; 
+}
+#imagen .texto-imagen {
+background:none repeat scroll 0 0 #fff;
+bottom:0;
+display:none;
+font-size:12px;
+height:400px;
+padding:5px 10px;
+position:absolute;
+right:0;
+width:165px;
+}
+#imagen .texto-imagen p {
+padding:0 5px;
+}
+
+#imagen .texto-imagen p a {
+color:#584D43;
+}
+
+#imagenPpal { 
+float:left;
+height:	400px;/*400*/
+overflow:hidden;
+position:relative;
+width:854px;/*745*/
+}
+#logo {
+left:32px;
+position:relative;
+top:12px;
+}
+#logo a {
+background:url("../imagenes/logo.png") no-repeat scroll 0 0 transparent;
+display:block;
+height:132px;
+position:relative;
+text-indent:-99999px;
+width:90px;
+}
+#menu {}
+#miniaturas { float:left; width:100px; height:400px;}
+#miniaturas ul {
+height:400px;
+list-style:none outside none;
+}
+#miniaturas ul li {
+cursor:pointer;
+height:80px;
+width:70px;
+}
+#miniaturas ul li.active {
+cursor:default;
+}
+#miniaturas ul li img {
+padding:0 10px;
+}
+
+#miniaturas ul li .slider, #miniaturas ul li .texto-mini , #miniaturas ul li #controls{
+display:none;
+}
+
+/* Menu */
+#nav { padding:0; margin:0; text-align:right;}
+#nav li { display:inline; padding-left:10px; }
+#nav li a {
+	/*font-family:"Futura",sans-serif;*/
+	font-size:9px;
+	letter-spacing:6px;
+	text-decoration: none;
+	text-transform:uppercase;
+	color: #4dbed3;
+}
+#nav li.activo a, #nav li a:hover{ color:#584d43;}
+
+/* Submenu */
+#submenu {position:relative;}
+#submenu ul{ position:absolute; list-style:none;  bottom:0px;}
+#submenu ul li { display:block; width:200px; text-align:left; font-size:12px;}
+#submenu ul li a {  color:#584D43; text-decoration:none;}
+#submenu ul li.activo a, #submenu ul li a:hover {  color:#fff;}
+
+.submenu-casa { display:none;left:223px;}
+.submenu-yatova { display:none;left:317px;}
+.submenu-contacto { display:none; left:754px;}
+
+#pie {
+	border-top:2px solid #4DBED3;
+	color:#584D43;
+	font-family:"Futura",sans-serif;
+	font-size:9px;
+	height:20px;
+	letter-spacing:2px;
+	line-height:20px;
+	margin:20px auto;
+	width:854px;
+}
+	
+#textoPpal {
+font-family:"Futura",sans-serif;
+font-size:11px;
+position:absolute;
+left:28px;
+line-height:14px;
+width:170px;
+}
+#textoPpal.inicio {
+top:98px;
+/*width:170px;*/
+}
+#textoPpal.gastronomia, #textoPpal.agricultura, #textoPpal.avisitar, #textoPpal.contacto {
+color:#fff;
+top:180px;
+/*width:155px;*/
+}
+#textoPpal.agricultura {
+color:#584D43;
+left:18px;
+top:18px;
+}
+#textoPpal.avisitar {
+top:70px;
+}
+#textoPpal.contacto {
+color:#584D43;
+left:655px;
+text-align:right;
+top:20px;
+}
+#textoPpal.enlaces, #textoPpal.enlaces a{
+color:#FFFFFF;
+font-size:11px;
+left:259px;
+line-height:21px;
+top:117px;
+width:230px;
+}
+#textoPpal.fiestas{
+color:#584D43;
+top:74px;
+}
+#textoPpal.gastronomia {
+top:20px;
+}
+#textoPpal.pueblo {
+color:#FFFFFF;
+left:585px;
+line-height:14px;
+text-align:right;
+top:20px;
+width:221px;
+}
+#textoPpal.servicios {
+left:656px;
+line-height:14px;
+margin-right:10px;
+text-align:right;
+top:184px;
+}
+#textoPpal.situacion {
+left:0px;
+width:100%;
+}
+#titulo{
+color:#72C7DB;
+float:left;
+left:495px;
+position:relative;
+text-align:right;
+text-transform:uppercase;
+top:130px;
+width:480px;
+}
+.seleccionado {	color:#584d43;}
+.separador { clear:both;}
+.submenu {text-transform:lowercase;
+height:100px;
+top:10px;
+}
